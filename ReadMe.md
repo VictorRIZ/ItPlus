@@ -13,3 +13,8 @@ Ficticious page about a revolution to host website.
 *HTML*
 *CSS*
 *JS*
+
+# References:
+
+*CSS*
+Online tutorials:https://www.youtube.com/c/OnlineTutorials4Designers
