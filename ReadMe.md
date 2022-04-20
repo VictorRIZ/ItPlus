@@ -6,7 +6,7 @@ Ficticious page about a revolution to host website.
 
 *Preview*
 
-<img src="images/Preview.png" alt="">
+<img src="images/Preview.jpg" alt="Preview">
 
 # Techs:
 
