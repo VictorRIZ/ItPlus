@@ -8,6 +8,14 @@
 html{
     font-size: 67.5%;
 }
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
 /*Header*/
 
 body{
@@ -146,6 +154,73 @@ header .sobre:nth-child(5)::before{
     font-size: 3.6rem;
     text-decoration: none;
 }
+/*Corpo do projeto*/
+#about{
+    display: grid;
+    place-items: center;
+}
 
-#about{}
+#about .about{
+    font-size: 2rem;
+}
+
+#about .about h1{
+    font-size: 5rem;
+    color: #0be57d;
+}
+
+#about .initial h1{
+    font-size: 3rem;
+}
+
+#about .initial h2{
+    font-size: 2.5rem;
+}
+
+#about .initial img{
+    width: 90%;
+}
+.about-it{
+    max-width: 75rem;
+    margin: 7rem 10rem;
+}
+
+.about-it .story h1{
+   font-size: 5rem; 
+   color: #0be57d;
+   text-transform: uppercase;
+}
+
+.about-it .story p{
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.about-it .story .more-info{
+    border: 2px solid greenyellow;
+    font-size:2.5rem;
+    padding: 1.5% 2%;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 1rem;
+    margin-right: 2%;
+}
+
+.about-it .story .more-info.create{
+    background: greenyellow;
+    transition: 0.5s;
+}
+.about-it .story .more-info.create:hover{
+    background: greenyellow;
+    box-shadow: 0 0 .1rem greenyellow,
+    0 0 1rem greenyellow,
+    0 0 1rem greenyellow,
+    0 0 1rem greenyellow;
+    transition: .5s;  
+}
+
+
+
+
+
 

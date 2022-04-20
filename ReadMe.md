@@ -1,7 +1,15 @@
-# Loja IT Plus +
+# IT Plus + 
 
-*Prévia*
+Free domain, hosting website, cloud and more....
 
-<video controls="controls" autoplay="autoplay">
-<source src="videoitPlus.mp4" type="video/mp4">
-<object data="" width="320" height="240">
+Ficticious page about a revolution to host website.
+
+*Preview*
+
+<img src="images/Preview.png" alt="">
+
+# Techs:
+
+*HTML*
+*CSS*
+*JS*
