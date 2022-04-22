@@ -5,19 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/iconpage.png">
     <title>IT + - Tecnologia na ponta do teclado!</title>
 </head>
 <body>
 
     <header id="header">
         <a id="logoPortfolio">IT +</a>
-        <div class="sobre"><a href="#">Sobre a IT +</a></div>
-        <div class="sobre"><a href="#">Projetos</a></div>
-        <div class="sobre"><a href="#">Planos</a></div>
-        <div class="sobre"><a href="#">Contato</a></div>
+        <button aria-label="Abrir menu" id="btn-hamburguer" aria-haspopup="true" 
+        aria-controls="content-menu"
+        aria-expanded="false"> Menu
+        <span id="hamburguer"></span>
+    </button>
+    <div id="responsivo">
+        <div class="sobre" onclick="toggleMenu();"><a href="#about">Sobre a IT +</a></div>
+        <div class="sobre" onclick="toggleMenu();"><a href="#people">Projetos</a></div>
+        <div class="sobre" onclick="toggleMenu();"><a href="#prices">Planos</a></div>
+        <div class="sobre" onclick="toggleMenu();"><a href="#contato">Contato</a></div>
+    </div>
     </header>
-    <section id="about">
-        <div class="about">
+    <main>
+        <div id="about">
             <br><br>
             <br><br>
             <br>
@@ -35,7 +43,7 @@
             <h2>Fora da caixinha....(ou melhor, do computador!)</h2>
         </div>
 
-        <div class="about-it">
+        <nav class="about-it">
             <div class="story">
             <h1>Conheça nossa história</h1>
             <br>    <br>   <br>    <br>
@@ -43,17 +51,118 @@
                 mudar o conceito de hospedagem de sites, bem como a criação
                 do mesmo.
                 <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laudantium culpa commodi sapiente iste magni. Ullam unde, repudiandae hic dolor tempora ducimus. Possimus nihil impedit, vitae ratione voluptate eos non!</p>
-            
+                Com a internet tomando cada vez mais espaço do ser humano, isso ainda em 2019, 
+                automaticamnte, a busca por domínios, sistemas da internet teve uma 
+                crescente bastante considerável. Em 2020, a internet praticamente se tornou o instrumento de ao menos 2/3
+                da população mundial, e muitas empresas tiveram que se adaptar a essa nova realidade.
+                <br>
+                Crescemos de uma maneira extraordinária, e com a confiança de nossos clientes, mudamos o conceito de hospedar 
+                sites e compras de domínio. Você pode consultar mais sobre esse assunto clicando no botões abaixo,
+                ou logo após esse texto, alguns relatos de quem recomenda o nosso serviço!
+                <br>
+                <br>
             <a href="#" class="more-info">Saiba mais!</a>
             <a href="#" class="more-info create">Hospedar site.</a>
         </div>
-        </div>
+        </nav>
 
         
-    </section>
+    <section id="people">
 
+    <nav class="projects"> <!--Carousel-->
+        <h1>Quem usou, indicou!</h1>
+        <div class="container"> <!--Quem irá mudar de posição-->
+        <div class="first a">
+            <h1>Loja de vendas</h1>
+            <br>
+            <p><cite>"Minha aplicação era muito grande, porém a agilidade foi muito rápida,
+                contrariando minhas expectativas."</cite></p>
+        </div>
+        <div class="first b">
+            <h1>João Bastos</h1>
+            <br>
+            <p><cite>"Atendimento muito bom, sem falar nos planos que são auto explicativos. 
+                Já recomendei para outros colegas!"</cite></p>
+        </div>
+        <div class="first c">
+            <h1>Henrique Freitas</h1>
+            <br>
+            <p> <cite>"Agilidade fantástica, já está marcado na minha lista como o melhor
+                site de hospedagem e domínios!"</cite></p>
+        </div>
+        <div class="first d">
+            <h1>Loja de vendas</h1>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam nemo ad ducimus quas! Praesentium sint amet optio quia molestiae nostrum iusto. Velit similique officiis totam eum sapiente adipisci tempore minima!</p>
+        </div>
+</div>
+<br>
+    </div>
+    </nav>
+</section>
 
+    <nav id="prices"> 
+        <h1>Conheça nossos planos e ofertas</h1>
+        <div class="prices">
+            <div class="plan a">
+                <h1>Plano simples</h1>
+                <h2>Preço: Gratuito</h2>
+                <p>5 sites</p>
+                <p> Nome da ITplus no corpo do site e marca da agua</p>
+                <p>Garantia https</p>
+                <p>Mudança de nome e arquivo 1 vez</p>
+                <button class="adquirir">Adquirir!</button>
+            </div>
+            <div class="plan b">
+                <h1>Plano pessoal</h1>
+                <h2>Preço: R$19,90 p/mês</h2>
+                <p>10 sites</p>
+                <p>Garantia https</p>
+                <p>Banco de dados</p>
+                <p>Garantia de 3 meses</p>
+                <p>Mudança de nome, arquivo ilimitada</p>
+                <button class="adquirir">Adquirir!</button>
+            </div>
+            <div class="plan c">
+                <h1>Plano TOP</h1>
+                <h2>Preço: R$49,90 p/mês</h2>
+                <p>40 sites</p>
+                <p>Garantia https</p>
+                <p>Banco de dados</p>
+                <p>Garantia de 2 anos</p>
+                <p>Mudança de nome, arquivo ilimitada</p>
+                <p>Suporte 24 horas</p>
+                <button class="adquirir">Adquirir!</button>
+            </div>
+            <div class="plan d">
+                <h1>Plano ULTIMATE</h1>
+                <h2>Preço: R$ 99,90 p/mês</h2>
+                <p>Sites ilimitados</p>
+                <p>Garantia https</p>
+                <p>Mudança de nome, arquivo ilimitada</p>
+                <p>Banco de dados</p>
+                <p>Garantia de 5 anos</p>
+                <p>Suporte 24 horas</p>
+                <p>Alerta sobre possíveis invasões</p>
+                <p>Bônus de adsense(Providenciado pela própria IT)</p>
+                <button class="adquirir">Adquirir!</button>
+            </div>
+        </div>
+    </nav>
+    
+    <footer id="contato">
+       <h1>Gostou de nós?</h1> 
+       <h2>Entre em contato pelo nosso whatsapp!</h2>
+       <h2>Aproveite também, e nos siga em nossas redes sociais!</h2>
+       <h2>Obrigado!</h2>
+       <div class="social-medias">
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.linkedin.com/in/victor-augusto-73684a1a4/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <i class="fa-brands fa-facebook"></i>
+
+       </div>
+    </footer>
+</main>
     <a id="whatsapp" href="https://api.whatsapp.com/send?phone=000&text=Olá! Gostaria de obter mais informações sobre a IT +." target="_blank">
     <i class="fab fa-whatsapp"></i>
 

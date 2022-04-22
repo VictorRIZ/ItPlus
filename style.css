@@ -7,14 +7,19 @@
 }
 html{
     font-size: 67.5%;
+    scroll-behavior: smooth;
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 h2{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 2rem;
 }
 /*Header*/
 
@@ -41,7 +46,9 @@ header #logoPortfolio{
     right: 85%;
     cursor: default;
 }
-
+header #responsivo{
+    display: flex;
+}
 header .sobre{
     position: relative;
     width: 19rem;
@@ -129,12 +136,17 @@ header .sobre:nth-child(4)::before{
     0 0 6rem  rgb(90, 26, 192);
 }
 
-header .sobre:nth-child(5)::before{
+header .sobre:nth-child(1)::before{
     background: rgb(110, 218, 23);
     box-shadow: 0 0 .5rem  rgb(110, 218, 23),
     0 0 1.5rem  rgb(110, 218, 23),
     0 0 3rem  rgb(110, 218, 23),
     0 0 6rem  rgb(110, 218, 23);
+}
+
+
+#header #btn-hamburguer{
+    display: none;
 }
 
 /* Botão do whatsapp */
@@ -155,29 +167,29 @@ header .sobre:nth-child(5)::before{
     text-decoration: none;
 }
 /*Corpo do projeto*/
-#about{
+main{
     display: grid;
     place-items: center;
 }
 
-#about .about{
+main #about{
+    display: grid;
     font-size: 2rem;
 }
 
-#about .about h1{
-    font-size: 5rem;
+main #about h1{
     color: #0be57d;
 }
 
-#about .initial h1{
+main .initial h1{
     font-size: 3rem;
 }
 
-#about .initial h2{
+main .initial h2{
     font-size: 2.5rem;
 }
 
-#about .initial img{
+main .initial img{
     width: 90%;
 }
 .about-it{
@@ -185,8 +197,7 @@ header .sobre:nth-child(5)::before{
     margin: 7rem 10rem;
 }
 
-.about-it .story h1{
-   font-size: 5rem; 
+.about-it .story h1{ 
    color: #0be57d;
    text-transform: uppercase;
 }
@@ -204,11 +215,11 @@ header .sobre:nth-child(5)::before{
     color: aliceblue;
     border-radius: 1rem;
     margin-right: 2%;
+    transition: 0.5s;
 }
 
 .about-it .story .more-info.create{
     background: greenyellow;
-    transition: 0.5s;
 }
 .about-it .story .more-info.create:hover{
     background: greenyellow;
@@ -219,7 +230,259 @@ header .sobre:nth-child(5)::before{
     transition: .5s;  
 }
 
+.about-it .story .more-info:hover{
+    border: 2px solid rgb(99, 155, 16);
+}
 
+/*Depoyments and projects*/
+.projects{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 30rem;
+    margin: 5%;
+}
+
+
+.projects .first{
+    display: grid;
+    place-items: center;
+    width: 46rem;
+    height: 20rem; 
+    background: rgb(0, 0, 0);
+    border-radius: 1rem; 
+    margin: 2rem;
+    box-shadow: 0 0 .5rem rgb(0, 248, 87),
+    0 0 .5rem rgb(0, 248, 87),
+    0 0 .5rem rgb(0, 248, 87),
+    0 0 .5rem rgb(0, 248, 87);
+}
+
+.projects h1{
+    font-size: 4rem;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /*prices*/
+
+#prices{
+    display: grid;
+    place-items: center;
+}
+
+#prices .prices{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.prices .plan{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 51rem;
+    height: 32rem; 
+    background: rgb(0, 0, 0);
+    border-radius: .5rem; 
+    margin: 2rem;
+    transition: .5s;
+    border: 3px solid green;
+}
+.plan .adquirir{
+    padding: 1rem;
+    width: 10rem;
+    background: rgb(24, 92, 250);
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition:.5s;
+}
+.plan.b{
+    border: 3px solid rgb(191, 198, 0);
+}
+
+.plan.c{
+    border: 3px solid rgb(245, 39, 39);
+}
+
+.plan.d{
+    border: 3px solid rgb(165, 0, 207);
+}
+
+.prices .plan:hover{
+    box-shadow: 0 0 .5rem rgb(0, 248, 87),
+    0 0 .5rem rgb(0, 248, 87),
+    0 0 .5rem rgb(0, 248, 87),
+    0 0 .5rem rgb(0, 248, 87);
+    transition: .5s;
+}
+.plan.b:hover{
+    box-shadow: 0 0 .5rem orange,
+    0 0 .5rem orange,
+    0 0 .5rem orange,
+    0 0 .5rem orange;
+}
+.plan.c:hover{
+    box-shadow: 0 0 .5rem red,
+    0 0 .5rem red,
+    0 0 .5rem red,
+    0 0 .5rem red;
+}
+.plan.d:hover{
+    box-shadow: 0 0 1rem purple,
+    0 0 1rem purple,
+    0 0 1rem purple,
+    0 0 1rem purple;
+}
+
+.plan .adquirir:hover{
+    background:rgb(0, 54, 181) ;
+}
+
+footer{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background: greenyellow;
+    color: black;
+}
+footer h2{
+    font-size: 2rem;
+}
+
+footer i{
+    margin: 2.5rem;
+    font-size: 2.5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.fa-linkedin:hover{
+    color: rgb(45, 45, 255);
+}
+
+.fa-facebook:hover{
+    color: blue;
+}
+
+.fa-instagram:hover{
+color: #9c47fc;
+    background: -webkit-linear-gradient(#9c47fc, #c37f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*menu responsivo*/
+
+@media(max-width: 1100px){
+    
+
+    #header #responsivo{
+        display: none;
+    }
+    
+    #header #btn-hamburguer{
+        display: flex;
+        padding: 1.5rem 1rem;
+        font-size: 1.8rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .8rem;
+        color: whitesmoke;
+    }
+    
+    #hamburguer{
+      display: block;
+      width: 3rem; 
+      border-top: .2rem solid; 
+      transition: .4s;
+    
+    }
+    
+    #header.active #responsivo{
+        left: 0;
+        height: calc(102vh - 1rem);
+        overflow-y: auto;
+        visibility: visible;
+        
+    }
+    #header #responsivo{
+        position: fixed; 
+        top: 10%; 
+        left: -100%; 
+        display: block;  
+        width: 40%;
+        height: 0rem;
+        background: black;
+        transition: .8s;
+        z-index:1000; 
+        visibility: hidden;
+        overflow-y: hidden;
+    
+    }
+    
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block; /*Teria que criar um display e content para
+        que detecte o objeto, no caso o menu hamburguer. Caso nn
+        fizesse isso, ficaria vazio*/
+        width: 3rem;
+        height: .15rem;
+        background: white;/*Uma variável que muda a cor conforme
+        escrita no hamburguer*/
+        margin-top: .8rem;
+        transition: .4s; /*Tempo que o menu hamburguer sofrerá a animação*/
+        position: relative;
+    }
+    
+    #header.active #btn-hamburguer{
+        color: whitesmoke;
+        transition: .2s;
+    }
+    
+    #header.active #hamburguer{
+        color: whitesmoke;
+        transition: .2s;
+        border-top-color: transparent;/*Aqui, o 1º traço ficará transpa-
+        rente após o usuário clicar no menu hamburguer*/
+    }
+    
+    #header.active #hamburguer::before{
+    transform: rotate(132deg); /*Se refere a quantos º de rotação
+    sofrerá*/
+    }
+    
+    #header.active #hamburguer::after{
+        transform: rotate(-132deg);
+        top: -1rem; /*Só funciona com objetos em posicionamento 
+        relativo, fixo ou absoluto*/
+        
+    }
+    }
 
 
 
