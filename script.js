@@ -28,7 +28,7 @@ function toggleMenu(event){ //Função que vai executar a ação do toggle
  do padrão(preventDefault), que nesse caso seria o "touch" */ 
 
 const header = document.getElementById('header'); 
-//Div de navegação(abouts)
+//header de navegação(header)
   header.classList.toggle('active'); /*(Adicione caso tenha, remova caso nn tenha)
   Essa é a fuunção do toggle nesse caso*/
   const active = abouts.classList.contains('active'); /*Ou seja,
