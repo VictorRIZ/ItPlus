@@ -21,3 +21,6 @@ Online tutorials:https://www.youtube.com/c/OnlineTutorials4Designers
 
 *JS*
 W3schools: How to create a slider - https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+
+# Page now working: https://itplus.netlify.app/ 
